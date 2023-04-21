@@ -7,19 +7,22 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel = "stylesheet" href ="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <body>
 <section class = "header">
     <nav> 
         <a href ="index.html"><img src = "images/logo.png"></a>
-        <div class = "nav-links">
+        <div class = "nav-links" id="navLinks">
+            <i class="fa fa-times" onclick = "hideMenu()"></i>
             <ul>
                 <li><a href="">ATTACKERS</a></li>
-                <li><a href="">MIDFIELDERS</a></li>
                 <li><a href="">DEFENDERS</a></li>
                     
             </ul>
         </div>
+        <i class="fa fa-bars" onclick = "showMenu()"></i>
     </nav> 
 <div class="text-box">
     <h1> THE FOOTBALL G.O.A.T.S</h1>
@@ -29,6 +32,133 @@
 
 
 </section>
+
+<!--- Attckers--->
+<section class = " ATTACKERS">
+    <h1> Top 3 Attackers </h1>
+    <p> Messi, Ronaldo and Neymar have had such an immense impact on both their clubs and countries. </p>
+
+    <div class ="row">
+        <div class="category">
+            <h3> Country</h3>
+            <p> All three players have made an immense impact for the country's team. Messi won Argentina 
+                their 3rd worldcup as well as the copa america, Ronaldo one the euros but failed in
+                winning the WC misserably, and Neymar has become the all time leading scorer for brazil. </p>
+        </div>
+        <div class="category">
+            <h3> Club</h3>
+            <p> All three players have made an immense impact for the clubs. Messi won Barcelona 
+                4 champions leagues as well as 10 La Ligas, Ronaldo one the champion's league 5 times with two clubs,
+                and Neymar has one UCL and one the spanish and french league 3 times. </p>
+        </div>
+        <div class="category">
+            <h3> Community</h3>
+            <p> All three players have made an immense impact for the community. Messi won 7 ballon dors 
+                inspiring millions around the world, Ronaldo 3 golden boots inspiring people to score goals,
+                and Neymar has bbeen crowned best player in brazil for 9 times and has become an icon in the streets of rio. </p>
+        </div>
+    </div>
+</section>
+
+<!--- Players-->
+<section class="players">
+    <h1> Market Value</h1>
+    <p> All-time highest market value ever reached</p>
+    <div class='row'>
+        <div class="players-col">
+            <img src="images/messi.jpg">
+            <h3> MESSI</h3>
+            <p> Market Value: 560m Euros</p>
+        </div>
+        <div class="players-col">
+            <img src="images/CR7.jpg">
+            <h3> Ronaldo</h3>
+            <p> Market Value: 360m Euros</p>
+        </div>
+        <div class="players-col">
+            <img src="images/ney.jpg">
+            <h3> Neymar</h3>
+            <p> Market Value: 260m Euros</p>
+        </div>
+    </div>
+
+
+</sections>
+
+<!--deffedners-->
+
+<section class = " ATTACKERS">
+    <h1> Top 3 Attackers </h1>
+    <p> Messi, Ronaldo and Neymar have had such an immense impact on both their clubs and countries. </p>
+
+    <div class ="row">
+        <div class="category">
+            <h3> Country</h3>
+            <p> All three players have made an immense impact for the country's team. Messi won Argentina 
+                their 3rd worldcup as well as the copa america, Ronaldo one the euros but failed in
+                winning the WC misserably, and Neymar has become the all time leading scorer for brazil. </p>
+        </div>
+        <div class="category">
+            <h3> Club</h3>
+            <p> All three players have made an immense impact for the clubs. Messi won Barcelona 
+                4 champions leagues as well as 10 La Ligas, Ronaldo one the champion's league 5 times with two clubs,
+                and Neymar has one UCL and one the spanish and french league 3 times. </p>
+        </div>
+        <div class="category">
+            <h3> Community</h3>
+            <p> All three players have made an immense impact for the community. Messi won 7 ballon dors 
+                inspiring millions around the world, Ronaldo 3 golden boots inspiring people to score goals,
+                and Neymar has bbeen crowned best player in brazil for 9 times and has become an icon in the streets of rio. </p>
+        </div>
+    </div>
+</section>
+
+<!--- Players-->
+<section class="players">
+    <h1> Market Value</h1>
+    <p> All-time highest market value ever reached</p>
+    <div class='row'>
+        <div class="players-col">
+            <img src="images/messi.jpg">
+            <h3> MESSI</h3>
+            <p> Market Value: 560m Euros</p>
+        </div>
+        <div class="players-col">
+            <img src="images/CR7.jpg">
+            <h3> Ronaldo</h3>
+            <p> Market Value: 360m Euros</p>
+        </div>
+        <div class="players-col">
+            <img src="images/ney.jpg">
+            <h3> Neymar</h3>
+            <p> Market Value: 260m Euros</p>
+        </div>
+    </div>
+
+
+
+
+
+</sections>
+
+
+
+
+
+
+
+<!--- Java Script Toggle menu--->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+
+</script>
 
 </body>
 </html>
